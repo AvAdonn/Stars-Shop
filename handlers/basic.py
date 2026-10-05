@@ -52,7 +52,7 @@ async def cmd_start(
     await req.add_user(session, user_id, referral_id, language)
     text = i18n.get('account_created')
     await message.answer(
-        'Account created', 
+        text, 
         parse_mode='HTML',
         reply_markup=kb.main
     )

@@ -1,8 +1,8 @@
 import logging
-from aiogram import BaseMiddleware
-from aiogram.types import TelegramObject, Message, CallbackQuery
-from typing import Callable, Awaitable, Dict, Any
+from typing import Any, Awaitable, Callable, Dict
 
+from aiogram import BaseMiddleware
+from aiogram.types import CallbackQuery, Message, TelegramObject
 from fluentogram import TranslatorRunner
 
 from database.engine import async_session

@@ -4,6 +4,8 @@ import logging
 from dotenv import load_dotenv
 from sqlalchemy.ext.asyncio import create_async_engine, async_sessionmaker, AsyncSession
 
+from database.models import Base
+
 load_dotenv()
 logger = logging.getLogger(__name__)
 
@@ -22,3 +24,8 @@ async_session = async_sessionmaker(
     class_=AsyncSession,
     expire_on_commit=False
 )
+
+async def init_models():
+    async with engine.begin() as conn:
+        await conn.run_sync(Base.metadata.create_all)
+        logger.info('База даних успішно створена')

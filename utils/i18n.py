@@ -11,9 +11,9 @@ def create_translator_hub() -> TranslatorHub:
     )
     
     translator_eu  = FluentTranslator(
-        locale='eu',
+        locale='en',
         translator=FluentBundle.from_files(
-            locale='eu-US',
+            locale='en-US',
             filenames=['locales/eu/main.ftl']
         )
     )
@@ -21,11 +21,11 @@ def create_translator_hub() -> TranslatorHub:
     hub = TranslatorHub(
         locales_map={
             'uk': ('uk', 'en'),
-            'eu': ('eu', 'en'),
-            'en': ('en', 'eu')
+            'en': ('en', 'en'),
+            'ru': ('ru', 'en')
         },
         translators=[translator_uk, translator_eu],
-        root_locale='uk'
+        root_locale='en'
     )
     
     return hub

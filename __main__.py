@@ -9,7 +9,9 @@ from utils.logger import setup_logger
 from middleware.base import DBMiddleware, AuthMiddleware
 from utils.i18n import create_translator_hub
 from middleware.md_i18n import TranslatorRunnerMiddleware
+from handlers import get_routers
 
+from database.engine import init_models
 
 setup_logger()
 logger = logging.getLogger(__name__)
@@ -17,6 +19,7 @@ logger.info('Логування завершено. Підготовка зап�
 
 async def starting() -> None:
     logger.info('Старт бота завершено.')
+    await init_models()
     
 async def stopped() -> None:
     logger.info('Бота зупинено.')
@@ -39,6 +42,8 @@ async def main() -> None:
         
         dp.message.middleware(AuthMiddleware())
         dp.callback_query.middleware(AuthMiddleware())
+        
+        dp.include_routers(*get_routers())
         
         dp.startup.register(starting)
         dp.shutdown.register(stopped)

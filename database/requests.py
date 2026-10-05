@@ -26,7 +26,7 @@ async def add_user(
     referral_id: int | None,
     language_code: str
 ):
-    new_user = insert(User).values(tg_id=tg_id, referral_id=referral_id, language_code=language_code)
+    new_user = insert(User).values(tg_id=tg_id, referral_id=referral_id, language=language_code)
     new_user = new_user.on_conflict_do_nothing(index_elements=['tg_id'])
     
     try:
