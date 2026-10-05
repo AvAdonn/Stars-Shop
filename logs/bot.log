@@ -821,3 +821,88 @@ INFO     | 2026-10-05 18:29:23,978 | sqlalchemy.engine.Engine:1822 | [generated 
 INFO     | 2026-10-05 18:29:23,996 | sqlalchemy.engine.Engine:2685 | COMMIT
 INFO     | 2026-10-05 18:29:24,138 | database.requests:35 | Нового користувача створено: 1089056378
 INFO     | 2026-10-05 18:29:25,934 | aiogram.event:179 | Update id=592228751 is handled. Duration 2233 ms by bot id=8560838161
+INFO     | 2026-10-05 18:29:38,728 | sqlalchemy.engine.Engine:2679 | BEGIN (implicit)
+INFO     | 2026-10-05 18:29:38,829 | sqlalchemy.engine.Engine:1822 | SELECT users.tg_id, users.spent_money, users.referral_id, users.language, users.created 
+FROM users 
+WHERE users.tg_id = ?
+INFO     | 2026-10-05 18:29:38,830 | sqlalchemy.engine.Engine:1822 | [cached since 15.07s ago] (1089056378,)
+INFO     | 2026-10-05 18:29:39,013 | sqlalchemy.engine.Engine:2682 | ROLLBACK
+INFO     | 2026-10-05 18:29:39,220 | aiogram.event:179 | Update id=592228752 is handled. Duration 514 ms by bot id=8560838161
+INFO     | 2026-10-05 18:29:40,471 | sqlalchemy.engine.Engine:2679 | BEGIN (implicit)
+INFO     | 2026-10-05 18:29:40,519 | sqlalchemy.engine.Engine:1822 | SELECT users.tg_id, users.spent_money, users.referral_id, users.language, users.created 
+FROM users 
+WHERE users.tg_id = ?
+INFO     | 2026-10-05 18:29:40,538 | sqlalchemy.engine.Engine:1822 | [cached since 16.78s ago] (1089056378,)
+INFO     | 2026-10-05 18:29:40,803 | sqlalchemy.engine.Engine:2682 | ROLLBACK
+INFO     | 2026-10-05 18:29:40,805 | aiogram.event:179 | Update id=592228753 is handled. Duration 328 ms by bot id=8560838161
+ERROR    | 2026-10-05 18:32:50,033 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 1236] The network connection was aborted by the local system
+WARNING  | 2026-10-05 18:32:50,168 | aiogram.dispatcher:228 | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8560838161)
+ERROR    | 2026-10-05 18:33:12,236 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:33:12,237 | aiogram.dispatcher:228 | Sleep for 1.503297 seconds and try again... (tryings = 1, bot id = 8560838161)
+ERROR    | 2026-10-05 18:33:34,770 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:33:34,770 | aiogram.dispatcher:228 | Sleep for 1.855414 seconds and try again... (tryings = 2, bot id = 8560838161)
+ERROR    | 2026-10-05 18:33:57,670 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:33:57,670 | aiogram.dispatcher:228 | Sleep for 2.354875 seconds and try again... (tryings = 3, bot id = 8560838161)
+ERROR    | 2026-10-05 18:34:21,052 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:34:21,052 | aiogram.dispatcher:228 | Sleep for 3.126680 seconds and try again... (tryings = 4, bot id = 8560838161)
+ERROR    | 2026-10-05 18:34:45,227 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:34:45,227 | aiogram.dispatcher:228 | Sleep for 3.887147 seconds and try again... (tryings = 5, bot id = 8560838161)
+ERROR    | 2026-10-05 18:35:10,148 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:35:10,148 | aiogram.dispatcher:228 | Sleep for 5.046677 seconds and try again... (tryings = 6, bot id = 8560838161)
+ERROR    | 2026-10-05 18:35:36,233 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:35:36,233 | aiogram.dispatcher:228 | Sleep for 5.074504 seconds and try again... (tryings = 7, bot id = 8560838161)
+ERROR    | 2026-10-05 18:36:02,359 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:36:02,360 | aiogram.dispatcher:228 | Sleep for 5.021991 seconds and try again... (tryings = 8, bot id = 8560838161)
+ERROR    | 2026-10-05 18:36:28,416 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:36:28,416 | aiogram.dispatcher:228 | Sleep for 4.837215 seconds and try again... (tryings = 9, bot id = 8560838161)
+ERROR    | 2026-10-05 18:36:54,274 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:36:54,274 | aiogram.dispatcher:228 | Sleep for 4.964689 seconds and try again... (tryings = 10, bot id = 8560838161)
+ERROR    | 2026-10-05 18:37:20,282 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:37:20,282 | aiogram.dispatcher:228 | Sleep for 4.966017 seconds and try again... (tryings = 11, bot id = 8560838161)
+ERROR    | 2026-10-05 18:37:46,281 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:37:46,281 | aiogram.dispatcher:228 | Sleep for 4.961463 seconds and try again... (tryings = 12, bot id = 8560838161)
+ERROR    | 2026-10-05 18:38:12,272 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:38:12,272 | aiogram.dispatcher:228 | Sleep for 4.810025 seconds and try again... (tryings = 13, bot id = 8560838161)
+ERROR    | 2026-10-05 18:38:38,105 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:38:38,105 | aiogram.dispatcher:228 | Sleep for 4.821426 seconds and try again... (tryings = 14, bot id = 8560838161)
+ERROR    | 2026-10-05 18:39:03,986 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:39:03,986 | aiogram.dispatcher:228 | Sleep for 4.892337 seconds and try again... (tryings = 15, bot id = 8560838161)
+ERROR    | 2026-10-05 18:39:29,940 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:39:29,940 | aiogram.dispatcher:228 | Sleep for 5.015420 seconds and try again... (tryings = 16, bot id = 8560838161)
+ERROR    | 2026-10-05 18:39:56,009 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:39:56,009 | aiogram.dispatcher:228 | Sleep for 4.874955 seconds and try again... (tryings = 17, bot id = 8560838161)
+ERROR    | 2026-10-05 18:40:21,935 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:40:21,935 | aiogram.dispatcher:228 | Sleep for 5.021521 seconds and try again... (tryings = 18, bot id = 8560838161)
+ERROR    | 2026-10-05 18:40:48,034 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:40:48,034 | aiogram.dispatcher:228 | Sleep for 5.069286 seconds and try again... (tryings = 19, bot id = 8560838161)
+ERROR    | 2026-10-05 18:41:14,156 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:41:14,156 | aiogram.dispatcher:228 | Sleep for 4.934825 seconds and try again... (tryings = 20, bot id = 8560838161)
+ERROR    | 2026-10-05 18:41:40,134 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:41:40,134 | aiogram.dispatcher:228 | Sleep for 4.788884 seconds and try again... (tryings = 21, bot id = 8560838161)
+ERROR    | 2026-10-05 18:42:05,966 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:42:05,966 | aiogram.dispatcher:228 | Sleep for 4.830338 seconds and try again... (tryings = 22, bot id = 8560838161)
+ERROR    | 2026-10-05 18:42:31,842 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:42:31,843 | aiogram.dispatcher:228 | Sleep for 4.987085 seconds and try again... (tryings = 23, bot id = 8560838161)
+ERROR    | 2026-10-05 18:47:46,696 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:47:46,775 | aiogram.dispatcher:228 | Sleep for 4.913794 seconds and try again... (tryings = 24, bot id = 8560838161)
+ERROR    | 2026-10-05 18:48:12,814 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:48:12,816 | aiogram.dispatcher:228 | Sleep for 4.880421 seconds and try again... (tryings = 25, bot id = 8560838161)
+ERROR    | 2026-10-05 18:48:25,343 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network connection was aborted by the local system]
+WARNING  | 2026-10-05 18:48:25,380 | aiogram.dispatcher:228 | Sleep for 4.897366 seconds and try again... (tryings = 26, bot id = 8560838161)
+ERROR    | 2026-10-05 18:48:30,356 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+WARNING  | 2026-10-05 18:48:30,356 | aiogram.dispatcher:228 | Sleep for 4.811439 seconds and try again... (tryings = 27, bot id = 8560838161)
+ERROR    | 2026-10-05 18:48:35,186 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+WARNING  | 2026-10-05 18:48:35,186 | aiogram.dispatcher:228 | Sleep for 5.010908 seconds and try again... (tryings = 28, bot id = 8560838161)
+ERROR    | 2026-10-05 18:48:40,222 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+WARNING  | 2026-10-05 18:48:40,249 | aiogram.dispatcher:228 | Sleep for 4.976264 seconds and try again... (tryings = 29, bot id = 8560838161)
+ERROR    | 2026-10-05 18:48:45,262 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+WARNING  | 2026-10-05 18:48:45,263 | aiogram.dispatcher:228 | Sleep for 5.015233 seconds and try again... (tryings = 30, bot id = 8560838161)
+ERROR    | 2026-10-05 18:48:50,289 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+WARNING  | 2026-10-05 18:48:50,292 | aiogram.dispatcher:228 | Sleep for 5.001239 seconds and try again... (tryings = 31, bot id = 8560838161)
+INFO     | 2026-10-05 18:49:06,714 | aiogram.dispatcher:240 | Connection established (tryings = 32, bot id = 8560838161)
+INFO     | 2026-10-05 18:50:34,736 | aiogram.dispatcher:625 | Polling stopped
+INFO     | 2026-10-05 18:50:34,738 | __main__:25 | Бота зупинено.
+ERROR    | 2026-10-05 18:50:34,757 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+WARNING  | 2026-10-05 18:50:34,759 | aiogram.dispatcher:228 | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8560838161)
+INFO     | 2026-10-05 18:50:35,019 | aiogram.dispatcher:414 | Polling stopped for bot @CubeClashBot id=8560838161 - 'Av-Stars Store'
+INFO     | 2026-10-05 18:50:35,025 | __main__:62 | Зупинено власноруч.
