@@ -537,3 +537,287 @@ WHERE users.tg_id = ?
 INFO     | 2026-10-05 13:52:42,843 | sqlalchemy.engine.Engine:1822 | [cached since 4.668s ago] (1089056378,)
 INFO     | 2026-10-05 13:52:42,975 | sqlalchemy.engine.Engine:2682 | ROLLBACK
 INFO     | 2026-10-05 13:52:42,978 | aiogram.event:179 | Update id=592228744 is handled. Duration 125 ms by bot id=8560838161
+INFO     | 2026-10-05 13:52:50,016 | sqlalchemy.engine.Engine:2679 | BEGIN (implicit)
+INFO     | 2026-10-05 13:52:50,018 | sqlalchemy.engine.Engine:1822 | SELECT users.tg_id, users.spent_money, users.referral_id, users.language, users.created 
+FROM users 
+WHERE users.tg_id = ?
+INFO     | 2026-10-05 13:52:50,019 | sqlalchemy.engine.Engine:1822 | [cached since 11.85s ago] (1089056378,)
+INFO     | 2026-10-05 13:52:50,144 | sqlalchemy.engine.Engine:2682 | ROLLBACK
+INFO     | 2026-10-05 13:52:50,146 | aiogram.event:179 | Update id=592228745 is handled. Duration 125 ms by bot id=8560838161
+INFO     | 2026-10-05 13:52:51,378 | sqlalchemy.engine.Engine:2679 | BEGIN (implicit)
+INFO     | 2026-10-05 13:52:51,380 | sqlalchemy.engine.Engine:1822 | SELECT users.tg_id, users.spent_money, users.referral_id, users.language, users.created 
+FROM users 
+WHERE users.tg_id = ?
+INFO     | 2026-10-05 13:52:51,380 | sqlalchemy.engine.Engine:1822 | [cached since 13.21s ago] (1089056378,)
+INFO     | 2026-10-05 13:52:51,540 | sqlalchemy.engine.Engine:2682 | ROLLBACK
+INFO     | 2026-10-05 13:52:51,542 | aiogram.event:179 | Update id=592228746 is handled. Duration 155 ms by bot id=8560838161
+INFO     | 2026-10-05 13:52:53,449 | sqlalchemy.engine.Engine:2679 | BEGIN (implicit)
+INFO     | 2026-10-05 13:52:53,449 | sqlalchemy.engine.Engine:1822 | SELECT users.tg_id, users.spent_money, users.referral_id, users.language, users.created 
+FROM users 
+WHERE users.tg_id = ?
+INFO     | 2026-10-05 13:52:53,450 | sqlalchemy.engine.Engine:1822 | [cached since 15.28s ago] (1089056378,)
+INFO     | 2026-10-05 13:52:53,569 | sqlalchemy.engine.Engine:2682 | ROLLBACK
+INFO     | 2026-10-05 13:52:53,569 | aiogram.event:179 | Update id=592228747 is handled. Duration 125 ms by bot id=8560838161
+INFO     | 2026-10-05 13:56:32,368 | aiogram.dispatcher:625 | Polling stopped
+INFO     | 2026-10-05 13:56:32,375 | __main__:25 | Бота зупинено.
+ERROR    | 2026-10-05 13:56:32,410 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+WARNING  | 2026-10-05 13:56:32,410 | aiogram.dispatcher:228 | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8560838161)
+INFO     | 2026-10-05 13:56:32,672 | aiogram.dispatcher:414 | Polling stopped for bot @CubeClashBot id=8560838161 - 'Av-Stars Store'
+INFO     | 2026-10-05 13:56:32,675 | __main__:62 | Зупинено власноруч.
+INFO     | 2026-10-05 13:56:52,161 | __main__:18 | Логування завершено. Підготовка запуску...
+INFO     | 2026-10-05 13:56:52,671 | __main__:21 | Старт бота завершено.
+INFO     | 2026-10-05 13:56:52,711 | sqlalchemy.engine.Engine:2679 | BEGIN (implicit)
+INFO     | 2026-10-05 13:56:52,731 | sqlalchemy.engine.Engine:1822 | PRAGMA main.table_info("users")
+INFO     | 2026-10-05 13:56:52,736 | sqlalchemy.engine.Engine:1822 | [raw sql] ()
+INFO     | 2026-10-05 13:56:52,757 | sqlalchemy.engine.Engine:1822 | PRAGMA temp.table_info("users")
+INFO     | 2026-10-05 13:56:52,762 | sqlalchemy.engine.Engine:1822 | [raw sql] ()
+INFO     | 2026-10-05 13:56:52,777 | sqlalchemy.engine.Engine:1822 | 
+CREATE TABLE users (
+	tg_id BIGINT NOT NULL, 
+	spent_money NUMERIC(10, 2) NOT NULL, 
+	referral_id BIGINT, 
+	language VARCHAR NOT NULL, 
+	created DATETIME NOT NULL, 
+	PRIMARY KEY (tg_id), 
+	FOREIGN KEY(referral_id) REFERENCES users (tg_id) ON DELETE SET NULL
+)
+
+
+INFO     | 2026-10-05 13:56:52,782 | sqlalchemy.engine.Engine:1822 | [no key 0.01086s] ()
+INFO     | 2026-10-05 13:56:52,931 | sqlalchemy.engine.Engine:1822 | CREATE INDEX ix_users_referral_id ON users (referral_id)
+INFO     | 2026-10-05 13:56:52,935 | sqlalchemy.engine.Engine:1822 | [no key 0.00974s] ()
+INFO     | 2026-10-05 13:56:52,948 | database.engine:31 | База даних успішно створена
+INFO     | 2026-10-05 13:56:52,953 | sqlalchemy.engine.Engine:2685 | COMMIT
+INFO     | 2026-10-05 13:56:52,989 | aiogram.dispatcher:597 | Start polling
+INFO     | 2026-10-05 13:56:53,075 | aiogram.dispatcher:379 | Run polling for bot @CubeClashBot id=8560838161 - 'Av-Stars Store'
+INFO     | 2026-10-05 13:57:21,589 | sqlalchemy.engine.Engine:2679 | BEGIN (implicit)
+INFO     | 2026-10-05 13:57:21,618 | sqlalchemy.engine.Engine:1822 | SELECT users.tg_id, users.spent_money, users.referral_id, users.language, users.created 
+FROM users 
+WHERE users.tg_id = ?
+INFO     | 2026-10-05 13:57:21,619 | sqlalchemy.engine.Engine:1822 | [generated in 0.00711s] (1089056378,)
+INFO     | 2026-10-05 13:57:21,651 | sqlalchemy.engine.Engine:1822 | INSERT INTO users (tg_id, spent_money, referral_id, language, created) VALUES (?, ?, ?, ?, CURRENT_TIMESTAMP) ON CONFLICT (tg_id) DO NOTHING
+INFO     | 2026-10-05 13:57:21,652 | sqlalchemy.engine.Engine:1822 | [generated in 0.00430s] (1089056378, 0.0, None, 'uk')
+INFO     | 2026-10-05 13:57:21,660 | sqlalchemy.engine.Engine:2685 | COMMIT
+INFO     | 2026-10-05 13:57:21,675 | database.requests:35 | Нового користувача створено: 1089056378
+INFO     | 2026-10-05 13:57:21,935 | aiogram.event:179 | Update id=592228748 is handled. Duration 358 ms by bot id=8560838161
+INFO     | 2026-10-05 13:58:45,923 | aiogram.dispatcher:625 | Polling stopped
+INFO     | 2026-10-05 13:58:45,923 | __main__:25 | Бота зупинено.
+ERROR    | 2026-10-05 13:58:45,934 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+WARNING  | 2026-10-05 13:58:45,934 | aiogram.dispatcher:228 | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8560838161)
+INFO     | 2026-10-05 13:58:46,206 | aiogram.dispatcher:414 | Polling stopped for bot @CubeClashBot id=8560838161 - 'Av-Stars Store'
+INFO     | 2026-10-05 13:58:46,207 | __main__:62 | Зупинено власноруч.
+INFO     | 2026-10-05 14:00:15,055 | __main__:18 | Логування завершено. Підготовка запуску...
+INFO     | 2026-10-05 14:00:15,405 | __main__:21 | Старт бота завершено.
+INFO     | 2026-10-05 14:00:15,464 | sqlalchemy.engine.Engine:2679 | BEGIN (implicit)
+INFO     | 2026-10-05 14:00:15,473 | sqlalchemy.engine.Engine:1822 | PRAGMA main.table_info("users")
+INFO     | 2026-10-05 14:00:15,473 | sqlalchemy.engine.Engine:1822 | [raw sql] ()
+INFO     | 2026-10-05 14:00:15,486 | sqlalchemy.engine.Engine:1822 | PRAGMA temp.table_info("users")
+INFO     | 2026-10-05 14:00:15,488 | sqlalchemy.engine.Engine:1822 | [raw sql] ()
+INFO     | 2026-10-05 14:00:15,496 | sqlalchemy.engine.Engine:1822 | 
+CREATE TABLE users (
+	tg_id BIGINT NOT NULL, 
+	spent_money NUMERIC(10, 2) NOT NULL, 
+	referral_id BIGINT, 
+	language VARCHAR NOT NULL, 
+	created DATETIME NOT NULL, 
+	PRIMARY KEY (tg_id), 
+	FOREIGN KEY(referral_id) REFERENCES users (tg_id) ON DELETE SET NULL
+)
+
+
+INFO     | 2026-10-05 14:00:15,497 | sqlalchemy.engine.Engine:1822 | [no key 0.00302s] ()
+INFO     | 2026-10-05 14:00:15,505 | sqlalchemy.engine.Engine:1822 | CREATE INDEX ix_users_referral_id ON users (referral_id)
+INFO     | 2026-10-05 14:00:15,505 | sqlalchemy.engine.Engine:1822 | [no key 0.00227s] ()
+INFO     | 2026-10-05 14:00:15,529 | database.engine:31 | База даних успішно створена
+INFO     | 2026-10-05 14:00:15,531 | sqlalchemy.engine.Engine:2685 | COMMIT
+INFO     | 2026-10-05 14:00:15,531 | aiogram.dispatcher:597 | Start polling
+INFO     | 2026-10-05 14:00:15,613 | aiogram.dispatcher:379 | Run polling for bot @CubeClashBot id=8560838161 - 'Av-Stars Store'
+INFO     | 2026-10-05 14:00:21,368 | sqlalchemy.engine.Engine:2679 | BEGIN (implicit)
+INFO     | 2026-10-05 14:00:21,374 | sqlalchemy.engine.Engine:1822 | SELECT users.tg_id, users.spent_money, users.referral_id, users.language, users.created 
+FROM users 
+WHERE users.tg_id = ?
+INFO     | 2026-10-05 14:00:21,374 | sqlalchemy.engine.Engine:1822 | [generated in 0.00104s] (1089056378,)
+INFO     | 2026-10-05 14:00:21,386 | sqlalchemy.engine.Engine:1822 | INSERT INTO users (tg_id, spent_money, referral_id, language, created) VALUES (?, ?, ?, ?, CURRENT_TIMESTAMP) ON CONFLICT (tg_id) DO NOTHING
+INFO     | 2026-10-05 14:00:21,390 | sqlalchemy.engine.Engine:1822 | [generated in 0.00683s] (1089056378, 0.0, None, 'uk')
+INFO     | 2026-10-05 14:00:21,397 | sqlalchemy.engine.Engine:2685 | COMMIT
+INFO     | 2026-10-05 14:00:21,412 | database.requests:35 | Нового користувача створено: 1089056378
+INFO     | 2026-10-05 14:00:21,739 | aiogram.event:179 | Update id=592228749 is handled. Duration 375 ms by bot id=8560838161
+ERROR    | 2026-10-05 14:10:01,758 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+WARNING  | 2026-10-05 14:10:02,031 | aiogram.dispatcher:228 | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8560838161)
+ERROR    | 2026-10-05 14:30:04,154 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+WARNING  | 2026-10-05 14:30:04,530 | aiogram.dispatcher:228 | Sleep for 1.253952 seconds and try again... (tryings = 1, bot id = 8560838161)
+ERROR    | 2026-10-05 14:30:06,073 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+WARNING  | 2026-10-05 14:30:06,079 | aiogram.dispatcher:228 | Sleep for 1.638723 seconds and try again... (tryings = 2, bot id = 8560838161)
+ERROR    | 2026-10-05 14:30:07,770 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+WARNING  | 2026-10-05 14:30:07,805 | aiogram.dispatcher:228 | Sleep for 2.131239 seconds and try again... (tryings = 3, bot id = 8560838161)
+ERROR    | 2026-10-05 17:56:46,613 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING  | 2026-10-05 17:56:46,718 | aiogram.dispatcher:228 | Sleep for 2.617145 seconds and try again... (tryings = 4, bot id = 8560838161)
+ERROR    | 2026-10-05 17:56:49,479 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING  | 2026-10-05 17:56:49,479 | aiogram.dispatcher:228 | Sleep for 3.339999 seconds and try again... (tryings = 5, bot id = 8560838161)
+ERROR    | 2026-10-05 18:10:34,462 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorDNSError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING  | 2026-10-05 18:10:34,896 | aiogram.dispatcher:228 | Sleep for 4.416591 seconds and try again... (tryings = 6, bot id = 8560838161)
+ERROR    | 2026-10-05 18:11:01,920 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:11:01,922 | aiogram.dispatcher:228 | Sleep for 4.995108 seconds and try again... (tryings = 7, bot id = 8560838161)
+ERROR    | 2026-10-05 18:11:11,580 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network connection was aborted by the local system]
+WARNING  | 2026-10-05 18:11:11,798 | aiogram.dispatcher:228 | Sleep for 4.974568 seconds and try again... (tryings = 8, bot id = 8560838161)
+ERROR    | 2026-10-05 18:11:16,815 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+WARNING  | 2026-10-05 18:11:16,817 | aiogram.dispatcher:228 | Sleep for 5.082597 seconds and try again... (tryings = 9, bot id = 8560838161)
+ERROR    | 2026-10-05 18:11:42,965 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:11:42,983 | aiogram.dispatcher:228 | Sleep for 4.964566 seconds and try again... (tryings = 10, bot id = 8560838161)
+ERROR    | 2026-10-05 18:12:09,018 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:12:09,035 | aiogram.dispatcher:228 | Sleep for 5.146218 seconds and try again... (tryings = 11, bot id = 8560838161)
+ERROR    | 2026-10-05 18:12:27,310 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network connection was aborted by the local system]
+WARNING  | 2026-10-05 18:12:27,399 | aiogram.dispatcher:228 | Sleep for 4.820931 seconds and try again... (tryings = 12, bot id = 8560838161)
+ERROR    | 2026-10-05 18:13:42,517 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+WARNING  | 2026-10-05 18:13:42,517 | aiogram.dispatcher:228 | Sleep for 5.077184 seconds and try again... (tryings = 13, bot id = 8560838161)
+ERROR    | 2026-10-05 18:13:47,603 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+WARNING  | 2026-10-05 18:13:47,603 | aiogram.dispatcher:228 | Sleep for 4.927980 seconds and try again... (tryings = 14, bot id = 8560838161)
+ERROR    | 2026-10-05 18:14:13,558 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:14:13,558 | aiogram.dispatcher:228 | Sleep for 5.034771 seconds and try again... (tryings = 15, bot id = 8560838161)
+ERROR    | 2026-10-05 18:14:39,641 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:14:39,641 | aiogram.dispatcher:228 | Sleep for 4.983294 seconds and try again... (tryings = 16, bot id = 8560838161)
+ERROR    | 2026-10-05 18:15:05,657 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:15:05,657 | aiogram.dispatcher:228 | Sleep for 4.998860 seconds and try again... (tryings = 17, bot id = 8560838161)
+ERROR    | 2026-10-05 18:15:31,675 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:15:31,675 | aiogram.dispatcher:228 | Sleep for 5.086795 seconds and try again... (tryings = 18, bot id = 8560838161)
+ERROR    | 2026-10-05 18:15:57,782 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:15:57,782 | aiogram.dispatcher:228 | Sleep for 5.013268 seconds and try again... (tryings = 19, bot id = 8560838161)
+ERROR    | 2026-10-05 18:16:23,840 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:16:23,840 | aiogram.dispatcher:228 | Sleep for 4.894023 seconds and try again... (tryings = 20, bot id = 8560838161)
+ERROR    | 2026-10-05 18:16:49,764 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:16:49,764 | aiogram.dispatcher:228 | Sleep for 5.102245 seconds and try again... (tryings = 21, bot id = 8560838161)
+ERROR    | 2026-10-05 18:17:15,913 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:17:15,913 | aiogram.dispatcher:228 | Sleep for 4.927093 seconds and try again... (tryings = 22, bot id = 8560838161)
+ERROR    | 2026-10-05 18:17:41,871 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:17:41,872 | aiogram.dispatcher:228 | Sleep for 5.031652 seconds and try again... (tryings = 23, bot id = 8560838161)
+ERROR    | 2026-10-05 18:18:07,929 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:18:07,929 | aiogram.dispatcher:228 | Sleep for 4.887432 seconds and try again... (tryings = 24, bot id = 8560838161)
+ERROR    | 2026-10-05 18:18:25,814 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network connection was aborted by the local system]
+WARNING  | 2026-10-05 18:18:25,863 | aiogram.dispatcher:228 | Sleep for 4.805041 seconds and try again... (tryings = 25, bot id = 8560838161)
+ERROR    | 2026-10-05 18:18:30,720 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The network location cannot be reached. For information about network troubleshooting, see Windows Help]
+WARNING  | 2026-10-05 18:18:30,720 | aiogram.dispatcher:228 | Sleep for 4.960270 seconds and try again... (tryings = 26, bot id = 8560838161)
+ERROR    | 2026-10-05 18:18:56,720 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:18:56,722 | aiogram.dispatcher:228 | Sleep for 4.892373 seconds and try again... (tryings = 27, bot id = 8560838161)
+ERROR    | 2026-10-05 18:19:22,645 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:19:22,645 | aiogram.dispatcher:228 | Sleep for 4.921749 seconds and try again... (tryings = 28, bot id = 8560838161)
+ERROR    | 2026-10-05 18:19:48,595 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:19:48,596 | aiogram.dispatcher:228 | Sleep for 4.984571 seconds and try again... (tryings = 29, bot id = 8560838161)
+ERROR    | 2026-10-05 18:20:14,605 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:20:14,608 | aiogram.dispatcher:228 | Sleep for 4.883786 seconds and try again... (tryings = 30, bot id = 8560838161)
+ERROR    | 2026-10-05 18:20:40,547 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:20:40,566 | aiogram.dispatcher:228 | Sleep for 4.967817 seconds and try again... (tryings = 31, bot id = 8560838161)
+ERROR    | 2026-10-05 18:21:06,585 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:21:06,585 | aiogram.dispatcher:228 | Sleep for 5.036057 seconds and try again... (tryings = 32, bot id = 8560838161)
+ERROR    | 2026-10-05 18:21:32,649 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:21:32,650 | aiogram.dispatcher:228 | Sleep for 4.923994 seconds and try again... (tryings = 33, bot id = 8560838161)
+ERROR    | 2026-10-05 18:21:58,626 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:21:58,626 | aiogram.dispatcher:228 | Sleep for 4.969574 seconds and try again... (tryings = 34, bot id = 8560838161)
+ERROR    | 2026-10-05 18:22:24,626 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:22:24,628 | aiogram.dispatcher:228 | Sleep for 4.972818 seconds and try again... (tryings = 35, bot id = 8560838161)
+ERROR    | 2026-10-05 18:22:50,630 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:22:50,645 | aiogram.dispatcher:228 | Sleep for 5.068929 seconds and try again... (tryings = 36, bot id = 8560838161)
+ERROR    | 2026-10-05 18:23:16,781 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:23:16,811 | aiogram.dispatcher:228 | Sleep for 5.013762 seconds and try again... (tryings = 37, bot id = 8560838161)
+ERROR    | 2026-10-05 18:23:42,867 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:23:42,878 | aiogram.dispatcher:228 | Sleep for 5.099260 seconds and try again... (tryings = 38, bot id = 8560838161)
+ERROR    | 2026-10-05 18:24:09,056 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:24:09,056 | aiogram.dispatcher:228 | Sleep for 5.062431 seconds and try again... (tryings = 39, bot id = 8560838161)
+ERROR    | 2026-10-05 18:24:35,165 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [The semaphore timeout period has expired]
+WARNING  | 2026-10-05 18:24:35,165 | aiogram.dispatcher:228 | Sleep for 4.986928 seconds and try again... (tryings = 40, bot id = 8560838161)
+INFO     | 2026-10-05 18:24:53,856 | aiogram.dispatcher:625 | Polling stopped
+INFO     | 2026-10-05 18:24:53,857 | __main__:25 | Бота зупинено.
+INFO     | 2026-10-05 18:24:54,137 | aiogram.dispatcher:414 | Polling stopped for bot @CubeClashBot id=8560838161 - 'Av-Stars Store'
+INFO     | 2026-10-05 18:24:54,152 | __main__:62 | Зупинено власноруч.
+INFO     | 2026-10-05 18:27:42,594 | __main__:18 | Логування завершено. Підготовка запуску...
+INFO     | 2026-10-05 18:27:43,002 | __main__:21 | Старт бота завершено.
+INFO     | 2026-10-05 18:27:43,031 | sqlalchemy.engine.Engine:2679 | BEGIN (implicit)
+INFO     | 2026-10-05 18:27:43,031 | sqlalchemy.engine.Engine:1822 | PRAGMA main.table_info("users")
+INFO     | 2026-10-05 18:27:43,036 | sqlalchemy.engine.Engine:1822 | [raw sql] ()
+INFO     | 2026-10-05 18:27:43,053 | sqlalchemy.engine.Engine:1822 | PRAGMA temp.table_info("users")
+INFO     | 2026-10-05 18:27:43,053 | sqlalchemy.engine.Engine:1822 | [raw sql] ()
+INFO     | 2026-10-05 18:27:43,062 | sqlalchemy.engine.Engine:1822 | 
+CREATE TABLE users (
+	tg_id BIGINT NOT NULL, 
+	spent_money NUMERIC(10, 2) NOT NULL, 
+	referral_id BIGINT, 
+	language VARCHAR NOT NULL, 
+	created DATETIME NOT NULL, 
+	PRIMARY KEY (tg_id), 
+	FOREIGN KEY(referral_id) REFERENCES users (tg_id) ON DELETE SET NULL
+)
+
+
+INFO     | 2026-10-05 18:27:43,062 | sqlalchemy.engine.Engine:1822 | [no key 0.00293s] ()
+INFO     | 2026-10-05 18:27:43,072 | sqlalchemy.engine.Engine:1822 | CREATE INDEX ix_users_referral_id ON users (referral_id)
+INFO     | 2026-10-05 18:27:43,072 | sqlalchemy.engine.Engine:1822 | [no key 0.00192s] ()
+INFO     | 2026-10-05 18:27:43,081 | database.engine:31 | База даних успішно створена
+INFO     | 2026-10-05 18:27:43,082 | sqlalchemy.engine.Engine:2685 | COMMIT
+INFO     | 2026-10-05 18:27:43,086 | aiogram.dispatcher:597 | Start polling
+INFO     | 2026-10-05 18:27:43,159 | aiogram.dispatcher:379 | Run polling for bot @CubeClashBot id=8560838161 - 'Av-Stars Store'
+INFO     | 2026-10-05 18:27:50,682 | sqlalchemy.engine.Engine:2679 | BEGIN (implicit)
+INFO     | 2026-10-05 18:27:50,776 | sqlalchemy.engine.Engine:1822 | SELECT users.tg_id, users.spent_money, users.referral_id, users.language, users.created 
+FROM users 
+WHERE users.tg_id = ?
+INFO     | 2026-10-05 18:27:50,796 | sqlalchemy.engine.Engine:1822 | [generated in 0.04741s] (1089056378,)
+INFO     | 2026-10-05 18:27:50,998 | sqlalchemy.engine.Engine:1822 | INSERT INTO users (tg_id, spent_money, referral_id, language, created) VALUES (?, ?, ?, ?, CURRENT_TIMESTAMP) ON CONFLICT (tg_id) DO NOTHING
+INFO     | 2026-10-05 18:27:51,013 | sqlalchemy.engine.Engine:1822 | [generated in 0.04772s] (1089056378, 0.0, None, 'uk')
+INFO     | 2026-10-05 18:27:51,071 | sqlalchemy.engine.Engine:2685 | COMMIT
+INFO     | 2026-10-05 18:27:51,109 | database.requests:35 | Нового користувача створено: 1089056378
+INFO     | 2026-10-05 18:27:51,735 | aiogram.event:179 | Update id=592228750 is handled. Duration 1062 ms by bot id=8560838161
+INFO     | 2026-10-05 18:28:29,605 | aiogram.dispatcher:625 | Polling stopped
+INFO     | 2026-10-05 18:28:29,606 | __main__:25 | Бота зупинено.
+ERROR    | 2026-10-05 18:28:29,613 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+WARNING  | 2026-10-05 18:28:29,613 | aiogram.dispatcher:228 | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8560838161)
+INFO     | 2026-10-05 18:28:29,877 | aiogram.dispatcher:414 | Polling stopped for bot @CubeClashBot id=8560838161 - 'Av-Stars Store'
+INFO     | 2026-10-05 18:28:29,881 | __main__:62 | Зупинено власноруч.
+INFO     | 2026-10-05 18:28:44,047 | __main__:18 | Логування завершено. Підготовка запуску...
+INFO     | 2026-10-05 18:28:44,390 | __main__:21 | Старт бота завершено.
+INFO     | 2026-10-05 18:28:44,403 | sqlalchemy.engine.Engine:2679 | BEGIN (implicit)
+INFO     | 2026-10-05 18:28:44,404 | sqlalchemy.engine.Engine:1822 | PRAGMA main.table_info("users")
+INFO     | 2026-10-05 18:28:44,404 | sqlalchemy.engine.Engine:1822 | [raw sql] ()
+INFO     | 2026-10-05 18:28:44,413 | database.engine:31 | База даних успішно створена
+INFO     | 2026-10-05 18:28:44,413 | sqlalchemy.engine.Engine:2685 | COMMIT
+INFO     | 2026-10-05 18:28:44,416 | aiogram.dispatcher:597 | Start polling
+INFO     | 2026-10-05 18:28:44,470 | aiogram.dispatcher:379 | Run polling for bot @CubeClashBot id=8560838161 - 'Av-Stars Store'
+INFO     | 2026-10-05 18:29:00,950 | aiogram.dispatcher:625 | Polling stopped
+INFO     | 2026-10-05 18:29:00,952 | __main__:25 | Бота зупинено.
+ERROR    | 2026-10-05 18:29:00,952 | aiogram.dispatcher:226 | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+WARNING  | 2026-10-05 18:29:00,952 | aiogram.dispatcher:228 | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8560838161)
+INFO     | 2026-10-05 18:29:01,208 | aiogram.dispatcher:414 | Polling stopped for bot @CubeClashBot id=8560838161 - 'Av-Stars Store'
+INFO     | 2026-10-05 18:29:01,209 | __main__:62 | Зупинено власноруч.
+INFO     | 2026-10-05 18:29:16,724 | __main__:18 | Логування завершено. Підготовка запуску...
+INFO     | 2026-10-05 18:29:17,449 | __main__:21 | Старт бота завершено.
+INFO     | 2026-10-05 18:29:17,499 | sqlalchemy.engine.Engine:2679 | BEGIN (implicit)
+INFO     | 2026-10-05 18:29:17,500 | sqlalchemy.engine.Engine:1822 | PRAGMA main.table_info("users")
+INFO     | 2026-10-05 18:29:17,503 | sqlalchemy.engine.Engine:1822 | [raw sql] ()
+INFO     | 2026-10-05 18:29:17,574 | sqlalchemy.engine.Engine:1822 | PRAGMA temp.table_info("users")
+INFO     | 2026-10-05 18:29:17,585 | sqlalchemy.engine.Engine:1822 | [raw sql] ()
+INFO     | 2026-10-05 18:29:17,611 | sqlalchemy.engine.Engine:1822 | 
+CREATE TABLE users (
+	tg_id BIGINT NOT NULL, 
+	spent_money NUMERIC(10, 2) NOT NULL, 
+	referral_id BIGINT, 
+	language VARCHAR NOT NULL, 
+	created DATETIME NOT NULL, 
+	PRIMARY KEY (tg_id), 
+	FOREIGN KEY(referral_id) REFERENCES users (tg_id) ON DELETE SET NULL
+)
+
+
+INFO     | 2026-10-05 18:29:17,612 | sqlalchemy.engine.Engine:1822 | [no key 0.00556s] ()
+INFO     | 2026-10-05 18:29:17,641 | sqlalchemy.engine.Engine:1822 | CREATE INDEX ix_users_referral_id ON users (referral_id)
+INFO     | 2026-10-05 18:29:17,657 | sqlalchemy.engine.Engine:1822 | [no key 0.02253s] ()
+INFO     | 2026-10-05 18:29:17,704 | database.engine:31 | База даних успішно створена
+INFO     | 2026-10-05 18:29:17,710 | sqlalchemy.engine.Engine:2685 | COMMIT
+INFO     | 2026-10-05 18:29:17,723 | aiogram.dispatcher:597 | Start polling
+INFO     | 2026-10-05 18:29:17,819 | aiogram.dispatcher:379 | Run polling for bot @CubeClashBot id=8560838161 - 'Av-Stars Store'
+INFO     | 2026-10-05 18:29:23,707 | sqlalchemy.engine.Engine:2679 | BEGIN (implicit)
+INFO     | 2026-10-05 18:29:23,788 | sqlalchemy.engine.Engine:1822 | SELECT users.tg_id, users.spent_money, users.referral_id, users.language, users.created 
+FROM users 
+WHERE users.tg_id = ?
+INFO     | 2026-10-05 18:29:23,859 | sqlalchemy.engine.Engine:1822 | [generated in 0.09950s] (1089056378,)
+INFO     | 2026-10-05 18:29:23,977 | sqlalchemy.engine.Engine:1822 | INSERT INTO users (tg_id, spent_money, referral_id, language, created) VALUES (?, ?, ?, ?, CURRENT_TIMESTAMP) ON CONFLICT (tg_id) DO NOTHING
+INFO     | 2026-10-05 18:29:23,978 | sqlalchemy.engine.Engine:1822 | [generated in 0.01350s] (1089056378, 0.0, None, 'uk')
+INFO     | 2026-10-05 18:29:23,996 | sqlalchemy.engine.Engine:2685 | COMMIT
+INFO     | 2026-10-05 18:29:24,138 | database.requests:35 | Нового користувача створено: 1089056378
+INFO     | 2026-10-05 18:29:25,934 | aiogram.event:179 | Update id=592228751 is handled. Duration 2233 ms by bot id=8560838161

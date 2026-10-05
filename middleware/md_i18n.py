@@ -20,7 +20,7 @@ class TranslatorRunnerMiddleware(BaseMiddleware):
             language_code = user_in_db.language
         else:
             user = data.get('event_from_user')
-            language_code = user.language_code if user else 'uk'
+            language_code = user.language_code if user else 'en'
         
         i18n_translator = self.hub.get_translator_by_locale(language_code)
         

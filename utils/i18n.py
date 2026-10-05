@@ -14,7 +14,7 @@ def create_translator_hub() -> TranslatorHub:
         locale='en',
         translator=FluentBundle.from_files(
             locale='en-US',
-            filenames=['locales/eu/main.ftl']
+            filenames=['locales/en/main.ftl']
         )
     )
     

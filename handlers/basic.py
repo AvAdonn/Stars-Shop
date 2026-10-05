@@ -47,7 +47,7 @@ async def cmd_start(
         else:
             logging.warning(f'Спроба самореферала від {user_id}')
 
-    language = message.from_user.language_code or 'eu'
+    language = message.from_user.language_code or 'en'
     
     await req.add_user(session, user_id, referral_id, language)
     text = i18n.get('account_created')
